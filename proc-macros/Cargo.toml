@@ -1,0 +1,13 @@
+[package]
+name = "aoc-proc-macros"
+version = "0.1.0"
+authors = ["Adamaq01 <adamthibert01@gmail.com>"]
+edition = "2021"
+
+[lib]
+crate_type = ["proc-macro"]
+
+[dependencies]
+syn = "1.0"
+quote = "1.0"
+proc-macro2 = "1.0"

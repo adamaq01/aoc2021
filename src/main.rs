@@ -34,6 +34,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     let mut registry = PuzzleRegistry::new();
 
     registry.register(day1::first_stage);
+    registry.register(day1::second_stage);
 
     run(token, client, registry, opts.day, opts.stage)?;
 

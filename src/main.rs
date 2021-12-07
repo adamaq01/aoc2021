@@ -5,7 +5,7 @@ use std::error::Error;
 mod puzzles;
 
 use clap::Parser;
-use puzzles::{PuzzleRegistry, Stage};
+use puzzles::{day1, PuzzleRegistry, Stage};
 use reqwest::blocking::Client;
 
 #[macro_use]
@@ -32,6 +32,8 @@ fn main() -> Result<(), Box<dyn Error>> {
     };
     let client = reqwest::blocking::Client::new();
     let mut registry = PuzzleRegistry::new();
+
+    registry.register(day1::first_stage);
 
     run(token, client, registry, opts.day, opts.stage)?;
 

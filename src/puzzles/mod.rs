@@ -1,5 +1,7 @@
 #![allow(unused)]
 
+pub mod day1;
+
 use std::{collections::HashMap, error::Error, fmt::Display, str::FromStr};
 
 pub type Result<T> = std::result::Result<T, Box<dyn Error>>;
